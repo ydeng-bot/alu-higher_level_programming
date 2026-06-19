@@ -1,3 +1,4 @@
 #!/usr/bin/python3
-number = 98
+# Clean version
+umber = 98
 print(f"{number} Battery street")
