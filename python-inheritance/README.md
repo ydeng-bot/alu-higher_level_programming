@@ -1,0 +1,1 @@
+This project contains solutions to the Python Inheritance tasks for the ALU Higher Level Programming curriculum. It demonstrates object-oriented programming concepts such as inheritance, class validation, method overriding, and type checking using Python 3.
