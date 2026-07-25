@@ -31,3 +31,13 @@ Works on an empty list:
     >>> empty = MyList()
     >>> empty.print_sorted()
     []
+
+Works with negative numbers, unsorted:
+
+    >>> neg_list = MyList()
+    >>> neg_list.append(3)
+    >>> neg_list.append(-7)
+    >>> neg_list.append(0)
+    >>> neg_list.append(-1)
+    >>> neg_list.print_sorted()
+    [-7, -1, 0, 3]
