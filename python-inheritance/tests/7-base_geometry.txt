@@ -49,3 +49,33 @@ integer_validator with a negative value:
     >>> bg.integer_validator("distance", -4)
     Traceback (most recent call last):
     ValueError: distance must be greater than 0
+
+integer_validator called with no arguments:
+
+    >>> bg.integer_validator() # doctest: +ELLIPSIS
+    Traceback (most recent call last):
+    TypeError: ...integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+integer_validator called with only the name argument:
+
+    >>> bg.integer_validator("age") # doctest: +ELLIPSIS
+    Traceback (most recent call last):
+    TypeError: ...integer_validator() missing 1 required positional argument: 'value'
+
+integer_validator with a tuple:
+
+    >>> bg.integer_validator("age", (4,))
+    Traceback (most recent call last):
+    TypeError: age must be an integer
+
+integer_validator with a list:
+
+    >>> bg.integer_validator("age", [3])
+    Traceback (most recent call last):
+    TypeError: age must be an integer
+
+integer_validator with a set:
+
+    >>> bg.integer_validator("age", {3, 4})
+    Traceback (most recent call last):
+    TypeError: age must be an integer
